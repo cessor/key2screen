@@ -32,7 +32,7 @@ namespace Key2Screen
 
 
         private const Keys ModifierDisplayFinishMessageBox = Keys.Alt | Keys.Control | Keys.Shift;
-        private const string WelcomeText = "  Key2Screen V.{0} active. Have fun with your Kata!  ";
+        private const string WelcomeText = "Have fun with your Kata!  (Alt + F4 to exit)";
         private readonly ObservableCollection<KeyPressedData> pressedKeys = new ObservableCollection<KeyPressedData>();
         private readonly DockStyle dockStyle;
         private readonly Timer fadeoutTimer = new Timer();
