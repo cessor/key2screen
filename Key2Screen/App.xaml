@@ -1,0 +1,11 @@
+﻿<Application x:Class="Key2Screen.App"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             Startup="OnApplicationStartup">
+    <Application.Resources>
+        <SolidColorBrush x:Key="Foreground" Color="DarkGray" />
+        <Color x:Key="Shadow" >LightGray</Color>
+        <Color x:Key="Highlight">LightGray</Color>
+        <BitmapImage x:Key="ProgramIcon" UriSource="pack://application:,,,/Key2Screen;component/icon.png"/>
+    </Application.Resources>
+</Application>
