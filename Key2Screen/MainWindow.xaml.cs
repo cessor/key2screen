@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Collections.Concurrent;
 using System.Collections.ObjectModel;
 using System.ComponentModel;
 using System.Globalization;
@@ -90,6 +91,11 @@ namespace Key2Screen
             DataContext = pressedKeys;
         }
 
+        protected MainWindow()
+        {
+            
+        }
+
         #endregion
 
         #region Public Methods and Operators
@@ -134,7 +140,7 @@ namespace Key2Screen
             ListVisibility = Visibility.Collapsed;
         }
 
-        private void OnKeyLoggerTick(object sender,
+        protected void OnKeyLoggerTick(object sender,
             EventArgs e)
         {
             keyLogger.Enabled = false;
@@ -170,7 +176,11 @@ namespace Key2Screen
             keyLogger.Enabled = true;
         }
 
-        private void SetText(KeyEventData keyEventData)
+        protected ConcurrentQueue<KeyEventData> PressedKeys {
+            get { return KeyboardHook.PressedKeys; }
+        }
+
+        protected virtual void SetText(KeyEventData keyEventData)
         {
             var lastLoggedItem = GetLastLoggedItem();
 

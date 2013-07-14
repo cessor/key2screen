@@ -3,16 +3,9 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 2012
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Key2Screen", "Key2Screen\Key2Screen.csproj", "{17A1412E-FD70-473A-86FB-6D424A77B31D}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Key2ScreenTests", "Key2ScreenTests\Key2ScreenTests.csproj", "{FA78578A-D280-42F3-9D29-A2DD4E001AED}"
+EndProject
 Global
-	GlobalSection(TeamFoundationVersionControl) = preSolution
-		SccNumberOfProjects = 2
-		SccEnterpriseProvider = {4CA58AB2-18FA-4F8D-95D4-32DDF27D184C}
-		SccTeamFoundationServer = https://tfs.codeplex.com/tfs/tfs11
-		SccLocalPath0 = .
-		SccProjectUniqueName1 = Key2Screen\\Key2Screen.csproj
-		SccProjectName1 = Key2Screen
-		SccLocalPath1 = Key2Screen
-	EndGlobalSection
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
 		Release|Any CPU = Release|Any CPU
@@ -22,6 +15,10 @@ Global
 		{17A1412E-FD70-473A-86FB-6D424A77B31D}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{17A1412E-FD70-473A-86FB-6D424A77B31D}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{17A1412E-FD70-473A-86FB-6D424A77B31D}.Release|Any CPU.Build.0 = Release|Any CPU
+		{FA78578A-D280-42F3-9D29-A2DD4E001AED}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{FA78578A-D280-42F3-9D29-A2DD4E001AED}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{FA78578A-D280-42F3-9D29-A2DD4E001AED}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{FA78578A-D280-42F3-9D29-A2DD4E001AED}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
